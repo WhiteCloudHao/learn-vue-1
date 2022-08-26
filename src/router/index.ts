@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import AuthenticationForm from '@/component/LoginForm/AuthenticationForm.vue'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
-
+  {
+    path: '/',
+    component: AuthenticationForm,
+    name: 'home',
+  }
 ]
 
 const router = new VueRouter({
