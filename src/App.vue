@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-   <Authentication />
-   
+    <router-view />
+   <!-- <Authentication /> -->
+   <h1></h1>
   </div> 
   
 </template>
 <script> 
-import Authentication from "@/component/LoginForm/AuthenticationForm.vue";
+// import Authentication from "@/component/authForm/AuthenticationForm.vue";
 
 export default {
   name: "app",
   components: {
-Authentication
+// Authentication
   },
   
  

@@ -26,6 +26,8 @@
 </template>
 
 <script>
+  import store from '@/store';
+  import  {mapActions} from 'vuex'
 const component = {
   name: "RegisterForm",
   data() {
@@ -89,10 +91,19 @@ const component = {
       };
     },
     methods: {
+      ...mapActions['commitsignUp'],
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
+            const data = {
+              name: this.ruleForm.name,
+              pass: this.ruleForm.pass,
+              
+            }
+            store.dispatch('commitsignUp',data)
             alert('submit!');
+            console.log(store.state.user)
+            
           } else {
             console.log('error submit!!');
             return false;
@@ -101,7 +112,8 @@ const component = {
       },
       resetForm(formName) {
         this.$refs[formName].resetFields();
-      }
+      },
+      
     }
   
   

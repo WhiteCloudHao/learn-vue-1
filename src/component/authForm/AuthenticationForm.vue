@@ -4,17 +4,19 @@
         <span>Đăng nhập</span> 
         <span>Đăng ký</span>
     </header>
-    <RegisterForm />
+    
+    
+    <router-view/>
   </div>
 </template>
 
 <script>
-import RegisterForm from "@/component/LoginForm/RegisterForm.vue"
+
 
 export default {
   name: "AuthForm",
   components: {
-    RegisterForm
+    
   }
 }
 </script>
