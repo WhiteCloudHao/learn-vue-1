@@ -101,7 +101,7 @@ const component = {
               
             }
             store.dispatch('commitsignUp',data)
-            alert('submit!');
+            
             console.log(store.state.user)
             
           } else {

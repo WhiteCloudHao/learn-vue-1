@@ -1,8 +1,12 @@
 <template>
   <div id="authenticationForm">
     <header>
-        <span>Đăng nhập</span> 
-        <span>Đăng ký</span>
+      <router-link :to="{ name: 'register'}">
+        Đăng ký
+</router-link> 
+<router-link :to="{ name: 'login'}">
+       Đăng nhập
+</router-link> 
     </header>
     
     

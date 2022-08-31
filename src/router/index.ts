@@ -11,16 +11,22 @@ const routes: Array<RouteConfig> = [
     name: 'home',
     children: [
       {
+       
         path: '/register',
         component: () => import('@/component/authForm/RegisterForm.vue'),
-        
+        name: 'register',
       },
       {
-        path: 'login',
+        path: '/login',
         component: () => import('@/component/authForm/LoginForm.vue'),
         name: 'login'
-      }
+      },
     ]
+  },
+  {
+    path: '/home',
+    component: () => import('@/view/HomePage.vue'),
+    name: 'homePage'
   }
 ]
 
