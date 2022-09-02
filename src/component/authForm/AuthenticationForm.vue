@@ -14,14 +14,16 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import {Component, Vue} from 'vue-property-decorator';
+@Component({
+  name: "AuthForm",  
+})
 
 
-export default {
-  name: "AuthForm",
-  components: {
-    
-  }
+export default class extends Vue{
+ 
+ 
 }
 </script>
 

@@ -43,3 +43,4 @@ Vue.use(Vuex)
   },
 })
 export default store;
+
